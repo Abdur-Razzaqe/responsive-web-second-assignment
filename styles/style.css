@@ -103,6 +103,7 @@ padding-bottom: 2px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    margin-bottom: 130px;
 }
 
 .name{
@@ -118,8 +119,60 @@ padding-bottom: 2px;
    border: .33px;
    font-size: 16px;
 }
+/* flower plants lover related style */
+
+.plants-lover{
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+#trusted-badge{
+width: 286px;
+height: 286px;
+position: absolute;
+left:300px;
+}
+
+.flower-lover-title{
+    font-weight: 700;
+    font-size: 50px;
+    padding-top: 38px;
+}
 
 
+/* deals related style */
+
+.latest-deals{
+      align-items: center;
+    margin-top: 133px;
+}
+
+.deal-title{
+    text-align:center;
+    font-weight: 700;
+    font-size: 50px;
+}
+.deal-description{
+    text-align: center;
+    color:rgba(0, 0, 0, 0.5) ;
+    font-size: 22px;
+}
+
+.deal-img{
+    margin-top: 115px;
+    gap: 20px;
+    border-radius:10px ;
+}
+
+.vertical-collage img{
+    gap: 20px;
+    border-radius: 10px;
+    margin: 05px 0px;
+}
+.row img{
+    border-radius: 15px;
+}
 
 /* responsive */
 @media screen and (max-width: 992px) {

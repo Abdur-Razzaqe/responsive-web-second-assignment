@@ -1,6 +1,131 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+.noto-serif-font {
   font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared style */
+.display-flex {
+  display: flex;
+}
+
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.text-color1 {
+  color: rgb(137, 135, 161);
+  font-weight: 400;
+}
+.text-color2 {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+/* header style */
+
+/* navbar related style */
+.navbar {
+  justify-content: space-between;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 48px;
+}
+.nav-links {
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link {
+  text-decoration: none;
+  justify-content: center;
+}
+.navbar {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* banner style */
+.banner {
+  align-items: center;
+  padding-bottom: 0px;
+  margin-top: 220px;
+  
+}
+.banner-left {
+  margin-left: 20px;
+}
+
+.banner-title {
+  font-weight: 700;
+  font-size: 65px;
+  gap: 13px;
+}
+.fresh {
+  color: rgb(233, 90, 8);
+}
+.banner-description {
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 0px;
+}
+.banner-rigt{
+    position: static;
+    width: 570px;
+    height: 355px;
+    order: 1;
+}
+
+/* plants related style */
+.plats{
+padding-bottom: 2px;
+}
+.plat-title {
+  text-align:center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0%;
+  pad
+}
+.plat-description {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* card related style */
+
+.cards{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.name{
+  margin-left: 60px; 
+}
+.price{
+    margin-left: 80px;
+}
+.btn-primary{
+   background-color: rgb(233, 90, 8); 
+   padding: 12px 80px;
+   color: rgb(255, 255, 255);
+   border: .33px;
+   font-size: 16px;
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 992px) {
+  .navbar,
+  .nav-links,
+  .banner {
+    flex-direction: column;
+  }
 }
